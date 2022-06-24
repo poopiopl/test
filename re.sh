@@ -4,7 +4,7 @@ git filter-branch --env-filter '
     cn="$GIT_COMMITTER_NAME"
     cm="$GIT_COMMITTER_EMAIL"
 
-    if [ cn = "yayydyasd" ]
+    if [ "$GIT_AUTHOR_NAME" = "yayydyasd" ]
     then
         cn="yayydyasdaaa"
         cm="108115283+test@users.noreply.github.com"
